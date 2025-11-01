@@ -1,0 +1,29 @@
+# section 1
+
+Hyprkiss is mostly a minimal grab bag of preinstalled packages meant as a kickstarter for a fresh vanilla arch system (in hyprland), specifically right after an archinstall.
+
+It leaves you with a system that's not supposed to be "complete" or "productive", that system will need tinkering to suit your needs, but it should take fewer steps to get there.
+
+# section 2
+⚠️ Hyprkiss relies on a specific archinstall configuration, it will not run otherwise
+
+| Section               | Option                                                                    |
+| --------------------- | ------------------------------------------------------------------------- |
+| Disk configuration    | Default partitioning btrfs + use compression > LUKS compression > Snapper |
+| Bootloader            | limine                                                                    |
+| Applications > Audio  | pipewire                                                                  |
+| Network configuration | Copy ISO network config                                                   |
+| Additional Packages   | git, curl                                                                 |
+
+⚠️ Additionally Hyprkiss will NOT run if:
+- The system has BIOS instead of UEFI
+- Is non-vanilla arch like CachyOS or Garuda
+- Running as root
+- Gnome or KDE Plasma is installed 
+
+then git clone this 
+
+# Full System?
+You'll still need essentials! This is not a full modern system. 
+> [!TIP]
+> Check out [hyprfluff](https://github.com/nerdwave-nick/hyprfluff), our own spin on it

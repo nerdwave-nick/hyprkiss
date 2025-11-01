@@ -42,3 +42,8 @@
 - wl-clipboard (terminal clipboard for wayland)
 - xdg-desktop-portal-gtk (depend)
 - xdg-desktop-portal-hyprland (depeind)
+
+# Full System?
+You'll still need essentials! This is not a full modern system. 
+> [!TIP]
+> Check out [hyprfluff](https://github.com/nerdwave-nick/hyprfluff), our own spin on it

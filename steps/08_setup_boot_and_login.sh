@@ -5,8 +5,10 @@ echo_g ":: grabbing limine config path"
 # grab limine config path
 if [[ -f /boot/EFI/BOOT/limine.conf ]]; then
   limine_config="/boot/EFI/BOOT/limine.conf"
-else
+elif [[ -f /boot/EFI/limine/limine.conf ]]; then
   limine_config="/boot/EFI/limine/limine.conf"
+else
+  limine_config="/boot/limine.conf"
 fi
 if [[ ! -f $limine_config ]]; then
   shitpost_error "limine config file not found, get outta me swamp"

@@ -1,47 +1,27 @@
-# ARCH ISO SETTINGS
+# section 1
 
-| Section                        | Option                                                                         |
-| ------------------------------ | ------------------------------------------------------------------------------ |
-| Disk configuration             | Default partitioning btrfs + use compression > LUKS compression > Snapper      |
-| Bootloader                     | limine                                                                         |
-| Applications > Audio           | pipewire                                                                       |
-| Network configuration          | Copy ISO network config                                                        |
-| Additional Packages            | git, curl                                                                      |
+Hyprkiss is mostly a minimal grab bag of preinstalled packages meant as a kickstarter for a fresh vanilla arch system (in hyprland), specifically right after an archinstall.
 
-# INSTALLED PACKAGES
+It leaves you with a system that's not supposed to be "complete" or "productive", that system will need tinkering to suit your needs, but it should take fewer steps to get there.
 
-- bluez(bluetooth protocol)
-- bluez-utils (ctl bluetooth stuff)
-- brightnessctl (brightness control)
-- ddcci driver (brightness control for external monitors)
-- gnome-keyring (administrator prompter)
-- gvfs-mtp (virtual file system dependancy)
-- gvfs-smp (dvirtual file system dependancy)
-- hypridle (idle manager)
-- hyprland 
-- hyprland-qtutils (dependancy graphical framework)
-- hyprlock (lockscreen)
-- hyprpicker (color picker tool/dependency)
-- hyprshot (snipping tool)
-- hyprsunset (blue light filter)
-- inetutils (network utils ping ipconfig)
-- iwd (wifi utlities)
-- man (manual viewer)
-- pamixer (audio cli)
-- plymouth (splashscreen/booting)
-- playerctl (audio command util)
-- polkit-gnome ( authentication dpeendancy)
-- qt5-wayland (dependancy)
-- sddm (simple desktop display manager)
-- ufw (firewall)
-- ufw-docker (firewall)
-- uwsm (wayland protocol)
-- wf-recorder ( recorder screen)
-- wiremix (volume mixer frontend)
-- wireplumber (policy session manager)
-- wl-clipboard (terminal clipboard for wayland)
-- xdg-desktop-portal-gtk (depend)
-- xdg-desktop-portal-hyprland (depeind)
+# section 2
+⚠️ Hyprkiss relies on a specific archinstall configuration, it will not run otherwise
+
+| Section               | Option                                                                    |
+| --------------------- | ------------------------------------------------------------------------- |
+| Disk configuration    | Default partitioning btrfs + use compression > LUKS compression > Snapper |
+| Bootloader            | limine                                                                    |
+| Applications > Audio  | pipewire                                                                  |
+| Network configuration | Copy ISO network config                                                   |
+| Additional Packages   | git, curl                                                                 |
+
+⚠️ Additionally Hyprkiss will NOT run if:
+- The system has BIOS instead of UEFI
+- Is non-vanilla arch like CachyOS or Garuda
+- Running as root
+- Gnome or KDE Plasma is installed 
+
+then git clone this 
 
 # Full System?
 You'll still need essentials! This is not a full modern system. 

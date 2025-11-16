@@ -7,13 +7,18 @@ It leaves you with a system that's not supposed to be "complete" or "productive"
 # section 2
 ⚠️ Hyprkiss relies on a specific archinstall configuration, it will not run otherwise
 
-| Section               | Option                                                                    |
-| --------------------- | ------------------------------------------------------------------------- |
-| Disk configuration    | Default partitioning btrfs + use compression > LUKS compression > Snapper |
-| Bootloader            | limine                                                                    |
-| Applications > Audio  | pipewire                                                                  |
-| Network configuration | Copy ISO network config                                                   |
-| Additional Packages   | git, curl                                                                 |
+
+
+| Section               | Option                                                                                                                                                                |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Disk configuration    | Partitioning > Default partition layout > btrfs > Use Subvolumes  > Use compression <br><br>Disk Encryption > Encryption type > LUKS<br><br>Btrfs snapshots > Snapper |
+| Bootloader            | limine                                                                                                                                                                |
+| Authentication        | User account > Add a user (with sudo)                                                                                                                                 |
+| Applications          | Audio > pipewire                                                                                                                                                      |
+| Network configuration | Copy ISO network config                                                                                                                                               |
+| Additional Packages   | git, curl                                                                                                                                                             |
+
+Reboot once the installation is complete
 
 ⚠️ Additionally Hyprkiss will NOT run if:
 - The system has BIOS instead of UEFI

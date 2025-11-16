@@ -2,8 +2,8 @@
 
 # ------------ Background & fade config ------------
 
-Window.SetBackgroundTopColor(0.165,0.153,0.247)
-Window.SetBackgroundBottomColor(0.137,0.130,0.212);
+Window.SetBackgroundTopColor(0.165, 0.153, 0.247);
+Window.SetBackgroundBottomColor(0.137, 0.130, 0.212);
 
 global.fade_step = 0.10;  # increase for faster fades
 

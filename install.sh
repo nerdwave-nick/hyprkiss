@@ -22,10 +22,10 @@ source ./steps/04_configure_pacman.sh
 source ./steps/05_install_packages.sh
 source ./steps/06_setup_plymouth.sh
 source ./steps/07_setup_sddm.sh
-source ./steps/08_setup_boot_and_login.sh
-source ./steps/09_setup_snapshots.sh
-source ./steps/10_reactivate_mkinitcpio_hooks.sh
-source ./steps/11_setup_hyprkiss_mkinitcpio_hooks.sh
+source ./steps/08_setup_hyprkiss_mkinitcpio_hooks.sh
+source ./steps/09_setup_boot_and_login.sh
+source ./steps/10_setup_snapshots.sh
+source ./steps/11_reactivate_mkinitcpio_hooks.sh
 source ./steps/12_update_limine.sh
 source ./steps/13_setup_ufw.sh
 
